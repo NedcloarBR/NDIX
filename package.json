@@ -1,31 +1,36 @@
 {
-	"name": "@senai-tcc/source",
-	"version": "1.0.0",
-	"description": "An system similar to PIX",
-	"author": {
-		"name": "Miguel Alexandre Uhlein <NedcloarBR>",
-		"email": "nedcloar1@hotmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/NedcloarBR/NDIX.git"
-	},
-	"bugs": {
-		"url": "https://github.com/NedcloarBR/NDIX/issues"
-	},
-	"private": true,
-	"license": "MIT",
-	"workspaces": [
-		"apps/*"
-	],
-	"engines": {
-		"node": "20.9.0"
-	},
-	"packageManager": "yarn@4.5.1",
-	"scripts": {
-		"start:dev": "turbo run start:dev"
-	},
-	"devDependencies": {
-		"turbo": "^2.2.3"
-	}
+  "name": "@ndix/source",
+  "version": "1.0.0",
+  "description": "An system similar to PIX",
+  "author": {
+    "name": "Miguel Alexandre Uhlein <NedcloarBR>",
+    "email": "nedcloar1@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NedcloarBR/NDIX.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NedcloarBR/NDIX/issues"
+  },
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "packageManager": "yarn@4.12.0",
+  "devDependencies": {
+    "@nx/expo": "22.4.5",
+    "@nx/js": "22.4.5",
+    "@nx/nest": "22.4.5",
+    "@nx/node": "22.4.5",
+    "@nx/web": "22.4.5",
+    "@nx/webpack": "22.4.5",
+    "@types/node": "25.2.2",
+    "nx": "22.4.5",
+    "tslib": "^2.8.1",
+    "typescript": "~5.9.3",
+    "webpack-cli": "^6.0.1"
+  }
 }
